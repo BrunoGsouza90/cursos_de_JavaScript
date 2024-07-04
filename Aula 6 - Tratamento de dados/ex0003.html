@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de dados</title>
+</head>
+<body>
+    <script>
+        nome = window.prompt('Qual é o seu nome?')
+        /* Criação de um texto que será renderizado no site escrito usando uma maneira mais 
+                fácil de conctenar variáveis. */
+        /* Para quebrar de linha utilize o fechamento de tag </br> .*/
+        document.write(`Seu nome é ${nome}! </br>`)
+        window.alert(`É um prazer ${nome} !`)
+        /* Para ver o tamanho de uma variável utilize "nome_da_variavel.length" . */
+        document.write(`Seu nome tem ${nome.length} letras! </br>`)
+        /* Para transferir o texto da variável para letras maiúsculas utilize
+                "nome_da_variavel.toUpperCase()" . */
+        document.write(`Seu nome em letras maiúsculas é ${nome.toUpperCase()} ! </br>`)
+        /* Para transferir o texto da variável para letras minúsculas utilize
+        "nome_da_variavel.toLowerCase()" . */
+        document.write(`Seu nome em letras minúsculas é ${nome.toLowerCase()} ! </br>`)
+
+        numero = Number.parseFloat(window.prompt('Digite um número: '))
+        /* Para alterar a quantidade de casas decimais apresentadas em um número
+                é possível utilizar o "nome_da_variavel.toFixed(número_específico) ." */
+        document.write(`O número digitado com duas casas é ${numero.toFixed(2)} ! </br>`)
+        /* Para alterar o "." por "," use o comando 
+                "nome_da_variavel.toFixed(número_específico).replace('.' , ',') ." */
+        document.write(`Estamos trocando o "." pela "," no número ${numero.toFixed(2).replace('.', ',')} !`)
+    </script>
+</body>
+</html>

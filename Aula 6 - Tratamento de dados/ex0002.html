@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de dados</title>
+</head>
+<body>
+    <script>
+        /* Criação de uma variável recebendo um valor enviado
+            pelo usuário. */
+        var nome = window.prompt('Qual é o seu nome?')
+        /* Criação de um alerta respondendo o usuário. */
+        window.alert('Tudo bem ' + nome + ' ?')
+        /* "Number.parseInt" e "Number.parseFloat" transformam
+                o número que vem por padrão em string para
+                número inteiro ou número real.
+            É possível usar apenas Number e podera utilizar números
+                inteiros como números reais. */
+        var n1 = Number.parseInt(window.prompt('Digite um número: '))
+        var n2 = Number.parseFloat(window.prompt('Digite outro número: '))
+        var n3 = Number(window.prompt('Digite outro número: '))
+
+        /* Criação de variável recebendo o valor de duas variáveis. */
+        var soma = n1 + n2 +n3
+        window.alert('A soma entre ' + n1 + ' + ' + n2 + ' + ' + n3 + ' = ' + soma + ' ! ')
+        /* Para transformar uma variável em string use String(nome_da_variável) */
+        window.alert(String(soma))
+    </script>
+</body>
+</html>
