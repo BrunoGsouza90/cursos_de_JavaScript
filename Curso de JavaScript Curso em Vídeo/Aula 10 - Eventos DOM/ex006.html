@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+
+        #area {
+            background-color: green;
+            color: white;
+            font: italic bold 20pt arial;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            border-radius: 50%;
+            border-color: aquamarine;
+            border: 5px solid rgb(65, 82, 76);
+        }
+
+        #msg {
+            background-color: green;
+            color: white;
+            font: italic bold 20pt arial;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            border-radius: 50%;
+            border-color: aquamarine;
+            border: 5px solid rgb(65, 82, 76);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Criação de uma div com Eventos DOM. -->    
+    <div id="area" onclick="clicar_area()" onmouseenter="entrar_area()" onmouseout="sair_area()">
+        Interaja...
+    </div>
+
+    <div id="msg">
+        Intereja...
+    </div>
+    
+    <script>
+
+        /* Chamada das funções DOM criadas no corpo do HTML. */
+        var area = window.document.getElementById('area')
+
+        function clicar_area() {
+            area.innerText = 'Clicou'
+            area.style.background = 'red'
+        }
+
+        function entrar_area() {
+            area.innerText = 'Entrou'
+            area.style.background = 'yellow'
+        }
+
+        function sair_area() {
+            area.innerText = 'Interajaa...'
+            area.style.background = 'green'
+        }
+
+
+        /* Interação com o DOM 100% JavaScript. */
+        var area1 = window.document.querySelector('#area1')
+
+        msg.addEventListener('click', clicar_msg)
+        msg.addEventListener('mouseenter', entrar_msg)
+        msg.addEventListener('mouseout', sair_msg)
+
+        function clicar_msg() {
+            msg.innerText = 'Clicou'
+            msg.style.background = 'red'
+        }
+
+        function entrar_msg() {
+            msg.innerText = 'Entrou'
+            msg.style.background = 'yellow'
+        }
+
+        function sair_msg() {
+            msg.innerText = 'Interajaa...'
+            msg.style.background = 'green'
+        }
+
+    </script>
+</body>
+</html>
