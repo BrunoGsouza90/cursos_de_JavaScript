@@ -67,26 +67,22 @@
 
 
         /* Interação com o DOM 100% JavaScript. */
-        var area1 = window.document.querySelector('#area1')
+        var msg = window.document.querySelector('#msg')
 
-        msg.addEventListener('click', clicar_msg)
-        msg.addEventListener('mouseenter', entrar_msg)
-        msg.addEventListener('mouseout', sair_msg)
-
-        function clicar_msg() {
+        msg.addEventListener('click', function clicar_msg() {
             msg.innerText = 'Clicou'
             msg.style.background = 'red'
-        }
+        })
 
-        function entrar_msg() {
+        msg.addEventListener('mouseenter', function entrar_msg() {
             msg.innerText = 'Entrou'
             msg.style.background = 'yellow'
-        }
+        })
 
-        function sair_msg() {
+        msg.addEventListener('mouseout', function sair_msg() {
             msg.innerText = 'Interajaa...'
             msg.style.background = 'green'
-        }
+        })
 
     </script>
 </body>

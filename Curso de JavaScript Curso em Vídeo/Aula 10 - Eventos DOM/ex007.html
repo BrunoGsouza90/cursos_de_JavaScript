@@ -8,21 +8,41 @@
 <body>
 
     <h1>Somando Valores</h1>
-    <input type="number" name="texto_um" id="texto_um"> +
-    <input type="number" name="texto_dois" id="texto_dois">
-    <button name="texto_dois" onclick="somar()">Somar</button>
+    <input type="number" name="primeiro_texto_um" id="primeiro_texto_um"> +
+    <input type="number" name="primeiro_texto_dois" id="primeiro_texto_dois">
+    <button onclick="primeiro_somar()">Somar</button>
     <p>Resultado = ?</p>
+
+    <h1>Somando Valores</h1>
+    <input type="number" name="segundo_texto_um" id="segundo_texto_um">
+    +
+    <input type="number" name="segundo_texto_dois" id="segundo_texto_dois">
+    <input type="button" id="segundo_somar" value="Somar">
+    <p><span id="segundo_resultado">Resultado = ?</span></p>
+
 
     <script>
 
-        /* Interajindo funções com o HTML. */
-        function somar() {
-            var texto_um = window.document.getElementById('texto_um')
-            var texto_dois = window.document.getElementById('texto_dois')
-            var soma = Number(texto_um.value) + Number(texto_dois.value)
-            resultado = window.document.getElementsByTagName('p')[0]
-            resultado.innerText = `Resultado = ${soma}`
+        /* Interajindo funções com o HTML aplicando o DOM por ele. */
+        function primeiro_somar() {
+            var primeiro_texto_um = window.document.getElementById('primeiro_texto_um')
+            var primeiro_texto_dois = window.document.getElementById('primeiro_texto_dois')
+            var primeira_soma = Number(primeiro_texto_um.value) + Number(primeiro_texto_dois.value)
+            primeiro_resultado = window.document.getElementsByTagName('p')[0]
+            primeiro_resultado.innerText = `Resultado = ${primeira_soma}`
         }
+
+        
+        var segundo_somar = window.document.querySelector('#segundo_somar')
+        var segundo_texto_um = window.document.getElementById('segundo_texto_um')
+        var segundo_texto_dois = window.document.getElementById('segundo_texto_dois')
+        var segundo_resultado = window.document.getElementById('segundo_resultado')
+
+        segundo_somar.addEventListener('click', function segundo_somar() {
+            segunda_soma = Number(segundo_texto_um.value) + Number(segundo_texto_dois.value)
+            segundo_resultado.innerText = `Resultado = ${segunda_soma}`
+        })
+        
 
     </script>
 
