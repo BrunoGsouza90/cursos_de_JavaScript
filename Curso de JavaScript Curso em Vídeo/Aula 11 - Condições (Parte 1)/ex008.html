@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <p>Digite sua velocidade:</p>
+    <input type="number" id="velocidade">Km/h
+    <button id="botao">Verificar</button>
+    <p></p>
+    <script>
+        window.document.getElementById('botao').addEventListener('click', function clicar(){    
+            var velocidade = Number(window.document.getElementById('velocidade').value)
+            var resultado = window.document.getElementsByTagName('p')[1]
+            if (velocidade >= 80){
+                
+                resultado.innerHTML = 'Você está multado!</br>Dirija com mais cuidado por favor!'
+            } else if (velocidade >= 60){
+                resultado.innerHTML = 'Você está dentro do limite!</br> Dirija sempre com segurança!'
+            } else {
+                resultado.innerHTML = 'Se quiser pode acelerar kkkk!</br> Dirija sempre com segurança!'
+            }
+        })
+    </script>
+</body>
+</html>

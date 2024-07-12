@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual a sua nacionalidade?</title>
+</head>
+<body>
+    <h1>Vamos descrobrir sua nacionalidade?</h1>
+    <p>Digite em qual país você nasceu:</p>
+    <input type="text" id="nacionalidade">
+    <button id="botao">Verificar</button>
+    <p>Lista de Países:</p>
+    <ul>
+        <li>Brasil</li>
+        <li>Estados Unidos</li>
+        <li>Russia</li>
+        <li>Inglaterra</li>
+    </ul>
+    <p>Você nasceu é:</p>
+    <script>
+
+        /* Estrutura de Condição. */
+        window.document.getElementById('botao').addEventListener('click', function clicar(){
+            var nacionalidade = (window.document.getElementById('nacionalidade').value).toUpperCase()
+            var resultado = window.document.getElementsByTagName('p')[2]
+            if (nacionalidade == 'BRASIL'){
+                resultado.innerText = 'Você nasceu é Brasileiro.'
+            } else if (nacionalidade == 'ESTADOS UNIDOS') {
+                resultado.innerText = 'Você nasceu é Americano.'
+            } else if (nacionalidade == 'RUSSIA') {
+                resultado.innerText = 'Você nasceu é Russo.'
+            } else if (nacionalidade == 'INGLATERRA') {
+                resultado.innerText = 'Você nasceu é Britânico.'
+            } else {
+                resultado.innerText = 'Nacionalidade não reconhecida!'
+            }
+        })
+    </script>
+</body>
+</html>
