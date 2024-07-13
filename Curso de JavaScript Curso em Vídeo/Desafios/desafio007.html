@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio do conversor de moedas (R$ → US$)</title>
+    <style>
+        button{
+            width: 180px;
+            height: 80px;
+            font: normal 15pt arial;
+            border-radius: 50px;
+            border: 0.5 solid gray;
+        }
+        button:hover{
+            background-color: rgb(128, 128, 128, 0.3);
+            border-color: transparent;
+        }
+        p{
+            font: normal 13pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conversor R$ → US$</h1>
+    <button>Converter</button>
+    <p>Clique no botão para iniciar:</p>
+    <script>
+        var cotacao = Number.parseFloat(window.prompt(`Antes de mais nada. Quantos está cotação do dólar agora?`))
+        window.document.getElementsByTagName('button')[0].addEventListener('click', function clicar(){
+            var dinheiro = Number.parseFloat(window.prompt(`Quantos R$ você tem na carteira?`))
+            var p = window.document.getElementsByTagName('p')[0]
+            p.innerHTML = `Você consegue comprar U$ ${(dinheiro / cotacao).toFixed(2).replace('.',',')} dólares com seu dinheiro total.`
+        })
+    </script>
+</body>
+</html>

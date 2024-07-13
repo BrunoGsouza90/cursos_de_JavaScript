@@ -21,19 +21,19 @@
         var hora = agora.getHours()
         switch (true){
             case hora > 0 && hora <= 6:
-                window.document.body.style.background = 'green'
+                document.body.style.background = 'rgba(0, 128, 0, 0.6)'
                 break
             case hora > 6 && hora <= 12:
-                window.document.body.style.background = 'blue'
+                document.body.style.background = 'rgba(0, 0, 255, 0.6)'
                 break
             case hora > 12 && hora <= 18:
-                window.document.body.style.background = 'yellow'
+                document.body.style.background = 'rgba(255, 255, 0, 0.6)'
                 break
             case hora > 18 && hora <= 24:
-                window.document.body.style.background = 'red'
+                document.body.style.background = 'rgba(255, 0, 0, 0.6)'
                 break
             default:
-                window.document.body.style.background = 'gray'
+                document.body.style.background = 'rgba(200, 200, 200, 0.6)'
         }
     </script>
 </body>

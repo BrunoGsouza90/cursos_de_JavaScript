@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A situação de um aluno</title>
+    <style>
+        button{
+            width: 230px;
+            height: 80px;
+            font: normal 15pt arial;
+            border-radius: 50px;
+            border: 0.5 solid gray;
+        }
+        button:hover{
+            background-color: gray;
+            border-color: transparent;
+        }
+        p{
+            font: normal 13pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Situação do aluno</h1>
+    <button>Entrar com as notas</button>
+    <h2></h2>
+    <p>Clique no botão acima para informar as notas do aluno.</p>
+    <script>
+        window.document.getElementsByTagName('button')[0].addEventListener('click', function clicar(){
+            aluno = window.prompt(`Qual é o nome do aluno?`)
+            nota1 = Number(window.prompt(`Primeira nota de ${aluno}:`))
+            nota2 = Number(window.prompt(`Segunda nota de ${aluno}:`))
+            h2 = window.document.getElementsByTagName('h2')[0]
+            h2.innerHTML = `Analisando a situação de ${aluno}`
+            p = window.document.getElementsByTagName('p')[0]
+            p.innerHTML = `Com as notas ${(nota1).toFixed(1).replace('.',',')} e ${(nota2).toFixed(1).replace('.',',')}, <strong>a média é ${((nota1 + nota2) / 2).toFixed(2).replace('.',',')}</strong></br>`
+            if((nota1 + nota2) / 2 < 3){
+                p.innerHTML += `Com a média acima de 3,0, o aluno está <span style="background-color:rgb(0, 128, 0, 0.5);"><strong><span style="background-color:rgb(255, 0, 0, 0.5);"><strong>REPROVADO</strong></span></strong></span>`
+            } else if ((nota1 + nota2) / 2 > 6) {
+                p.innerHTML += `Com a média acima de 6,0, o aluno está <span style="background-color:rgb(0, 128, 0, 0.5);"><strong>APROVADO</strong></span>`
+            } else {
+                p.innerHTML += `Com a média entre 3,0 e 6,0, o aluno está <span style="background-color:rgb(255, 255, 0, 0.5);"><strong>RECUPERAÇÃO</strong></span>` 
+            }
+        })
+    </script>
+</body>
+</html>

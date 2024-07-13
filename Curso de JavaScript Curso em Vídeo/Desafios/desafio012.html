@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preço antes, preço depois</title>
+    <style>
+        button{
+            width: 180px;
+            height: 80px;
+            font: normal 15pt arial;
+            border-radius: 50px;
+            border: 0.5 solid gray;
+        }
+        button:hover{
+            background-color: gray;
+            border-color: transparent;
+        }
+        p{
+            font: normal 13pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Preço mudou</h1>
+    <button>Verificar</button>
+    <h2></h2>
+    <p>Clique no botão acima para analisar a mudança de preço.</p>
+    <script>
+        window.document.getElementsByTagName('button')[0].addEventListener('click', function clicar(){
+            preco_anterior = Number(window.prompt(`Qual o preço anterior do produto?`))
+            preco_atual = Number(window.prompt(`Qual o preço atual do produto?`))
+            h2 = window.document.getElementsByTagName('h2')[0]
+            h2.innerHTML = `Analisando os valores informados`
+            p = window.document.getElementsByTagName('p')[0]
+            if(preco_anterior < preco_atual){
+                p.innerHTML = `O produto custava R$ ${(preco_anterior).toFixed(2).replace('.',',')}.</br>`
+                p.innerHTML += `Hoje o produto está mais caro.</br>`
+                p.innerHTML += `O preço subiu R$ ${(preco_atual - preco_anterior).toFixed(2).replace('.',',')} em relação ao preço anterior.</br>`
+                p.innerHTML += `Uma variação de ${((preco_atual - preco_anterior) * 100 / preco_atual).toFixed(2).replace('.',',')}% pra cima.`
+            } else {
+                p.innerHTML = `O produto custava R$ ${(preco_anterior).toFixed(2).replace('.',',')}.</br>`
+                p.innerHTML += `Hoje o produto está mais barato.</br>`
+                p.innerHTML += `O preço caiu R$ ${(preco_anterior - preco_atual).toFixed(2).replace('.',',')} em relação ao preço anterior.</br>`
+                p.innerHTML += `Uma variação de ${((preco_anterior - preco_atual) * 100 / preco_anterior).toFixed(2).replace('.',',')}% pra cima.`
+            }
+        })
+    </script>
+</body>
+</html>

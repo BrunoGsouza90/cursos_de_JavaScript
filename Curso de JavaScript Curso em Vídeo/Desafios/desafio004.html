@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando o Troco</title>
+    <style>
+        button{
+            width: 200px;
+            height: 80px;
+            font: normal 15pt arial;
+            border-radius: 50px;
+            border: 0.5pt solid gray;
+        }
+        button:hover{
+            background-color: rgb(128, 128, 128, 0.3);
+            border-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <h1>Caculando o Troco</h1>
+    <button>Comprar produto</button>
+    <script>
+        window.document.getElementsByTagName('button')[0].addEventListener('click', function clicar(){
+            produto = window.prompt(`Que produto você está comprando?`)
+            preco = window.prompt(`Quanto custa esse ${produto} que você está comprando?`)
+            pagamento = window.prompt(`Qual valor em dinheiro você vai dar?`)
+            window.confirm(`Você comprou ${produto} que custou R$ ${preco}.\nDeu R$ ${pagamento} e vai receber R$ ${pagamento - preco} de troco.\nVolte Sempre!`)
+        })
+    </script>
+</body>
+</html>

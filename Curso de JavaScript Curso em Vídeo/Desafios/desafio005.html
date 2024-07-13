@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio do conversor de medidas</title>
+    <style>
+        button{
+            width: 180px;
+            height: 80px;
+            border-radius: 50px;
+            font: normal 15pt arial;
+            border: 0.5px solid gray;
+        }
+        button:hover{
+            background-color: rgb(128, 128, 128, 0.3);
+            border-color: transparent;
+        }
+        p{
+            font: normal 13pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conversor de Medidas</h1>
+    <button>Converter</button>
+    <h2></h2>
+    <p>Clique no botão acima para iniciar: </p>
+    <script>
+        window.document.getElementsByTagName('button')[0].addEventListener('click', function clicar(){
+            distancia = Number.parseFloat(window.prompt(`Digite a distância em metros(m)`))
+            var h2 = window.document.getElementsByTagName('h2')[0]
+            h2.innerHTML = `A distância de ${distancia.toFixed(2).replace('.',',')} metros, corresponde a...`
+            var p = window.document.getElementsByTagName('p')[0]
+            p.innerHTML = `${(distancia / 1000).toFixed(3).replace('.',',')} quilômetros (Km)</br>`
+            p.innerHTML += `${(distancia / 100).toFixed(3).replace('.',',')} hectômetros (Hm)</br>`
+            p.innerHTML += `${(distancia / 10).toFixed(3).replace('.',',')} decâmetros (Dam)</br>`
+            p.innerHTML += `${(distancia * 10).toFixed(1).replace('.',',')} decímetros (dm)</br>`
+            p.innerHTML += `${(distancia * 100).toFixed(0).replace('.',',')} centímetros (cm)</br>`
+            p.innerHTML += `${(distancia * 100).toFixed(0).replace('.',',')} milimetros (mm)</br>`
+        })
+    </script>
+</body>
+</html>

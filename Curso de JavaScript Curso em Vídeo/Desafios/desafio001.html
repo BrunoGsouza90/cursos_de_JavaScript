@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio das Mensagens</title>
+    <style>
+
+        button {
+            width: 120px;
+            height: 80px;
+            font: normal 15pt arial;
+            border-radius: 50px;
+            border: 0.5px solid gray;
+        }
+        button:hover{
+            background-color: rgb(128, 128, 128, 0.5);
+            border-color: transparent;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Desafio das Mensagens</h1>
+    <div id="botoes">
+        <button>Botão 1</button>
+        <button>Botão 2</button>
+        <button>Botão 3</button>
+    </div>
+
+    <script>
+
+        window.document.getElementById('botoes').addEventListener('click', function clicar(){
+            var botao_um = window.document.getElementsByTagName('button')[0]
+            var botao_dois = window.document.getElementsByTagName('button')[1]
+            var botao_tres = window.document.getElementsByTagName('button')[2]
+            if (event.target == botao_um){
+                window.alert('Você clicou no 1º Botão!')
+            } else if (event.target == botao_dois) {
+                window.alert('Você clicou no 2º Botão!')
+            } else {
+                window.alert('Você clicou no 3º Botão!')
+            }
+        })
+
+    </script>
+</body>
+</html>

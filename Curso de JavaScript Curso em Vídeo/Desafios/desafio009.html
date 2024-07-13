@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reajuste salarial</title>
+    <style>
+        button{
+            width: 220px;
+            height: 80px;
+            border: 0.5 solid gray;
+            border-radius: 50px;
+            font: normal 15pt arial
+        }
+        button:hover{
+            background-color: gray;
+            border-color: transparent;
+        }
+        p{
+            font: normal 13pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Reajuste salarial</h1>
+    <button>Reajustar Salário</button>
+    <h2></h2>
+    <p>Clique no botão acima para iniciar:</p>
+    <script>
+        window.document.getElementsByTagName('button')[0].addEventListener('click', function clicar(){
+            funcionario = window.prompt(`Qual é o nome do funcionário?`)
+            salario = Number.parseFloat(window.prompt(`Qual é o salário de ${funcionario}?`))
+            porcentagem = Number.parseInt(window.prompt(`O salário de ${funcionario}  vai ser requisitado em qual porcentagem?`))
+            h2 = window.document.getElementsByTagName('h2')[0]
+            h2.innerHTML = `${funcionario} recebeu um aumento salarial!`
+            p = window.document.getElementsByTagName('p')[0]
+            p.innerHTML = `O salário atual era R$ ${(salario).toFixed(2).replace('.',',')}.</br>`
+            p.innerHTML += `Com um aumento de ${porcentagem}% o salário vai aumentar R$ ${(salario * 18 / 100).toFixed(2).replace('.',',')}</br>`
+            p.innerHTML += `E a partir daí, ${funcionario} vai passar a ganhar R$ ${(salario + (salario * 18 / 100)).toFixed(2).replace('.',',')}.`
+        })
+    </script>
+</body>
+</html>

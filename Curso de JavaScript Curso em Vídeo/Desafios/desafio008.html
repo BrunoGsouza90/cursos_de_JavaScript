@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio desconto de 10%</title>
+    <style>
+        button{
+            width: 220px;
+            height: 80px;
+            border: 0.5 solid gray;
+            font: normal 15pt arial;
+            border-radius: 50px;
+        }
+        button:hover{
+            background-color: rgb(128, 128, 128, 0.3);
+            border-color: transparent;
+        }
+        p{
+            font: normal 13pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calcular Desconto</h1>
+    <button>Desconto de 10%</button>
+    <h2></h2>
+    <p>Clique no botão acima para iniciar:</p>  
+    <script>
+        window.document.getElementsByTagName('button')[0].addEventListener('click', function clicar(){
+            produto = window.prompt(`Qual é o produto que você está comprando?`)
+            preco = Number.parseFloat(window.prompt(`Qual é o preço do(a) ${produto}?`))
+            h2 = window.document.getElementsByTagName('h2')[0]
+            h2.innerHTML = `Calculando desconto de 10% para ${produto}`
+            p = window.document.getElementsByTagName('p')[0]
+            p.innerHTML = `O preço original era R$ ${(preco).toFixed(2).replace('.',',')}.</br>`
+            p.innerHTML += `Você acaba de ganhar R$ ${(preco * 10 / 100).toFixed(2).replace('.',',')} de desconto (-10%).</br>`
+            p.innerHTML += `No fim, você vai pagar R$ ${(preco - (preco * 10 / 100)).toFixed(2).replace('.',',')} no produto  ${produto}.`
+        })
+    </script>
+</body>
+</html>

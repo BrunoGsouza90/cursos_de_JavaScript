@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resolvendo Bhaskara</title>
+    <style>
+        button{
+            width: 180px;
+            height: 80px;
+            border-radius: 50px;
+            border: 0.5px solid gray;
+            font: normal 15pt arial;
+        }
+        button:hover{
+            background-color: rgb(128, 128, 128, 0.3);
+            border-color: transparent;
+        }
+        p{
+            font: normal 13pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Resolvendo Bhaskara</h1>
+    <button>Calcular</button>
+    <h2></h2>
+    <p>Considerando uma equação no formato <strong>ax<sup>2</sup> + bx + c =</strong> 0, aparte o botão acima para calcular o valor de &#916;.</p>
+    <script>
+        window.document.getElementsByTagName('button')[0].addEventListener('click', function clicar(){
+            a = Number(window.prompt(`Qual é o valor de a?`))
+            b = Number(window.prompt(`Qual é o valor de b?`))
+            c = Number(window.prompt(`Qual é o valor de c?`))
+            h2 = window.document.getElementsByTagName('h2')[0]
+            h2.innerHTML = `Resolvendo Bhaskara`
+            p = window.document.getElementsByTagName('p')[0]
+            p.innerHTML = `A equação atual é <strong>${a}x<sup>${c}</sup> + ${b}x + ${c} = 0</strong></br>`
+            p.innerHTML += `O cálculo realizado será <strong>&#916; = ${b}<sup>${c}</sup> -4 .${a} .${c}</strong></br>`
+            p.innerHTML += `O valor calculado foi <strong>&#916; = ${(b * b) - (4 * 3 * 2)}</strong>`
+        })
+    </script>
+</body>
+</html>

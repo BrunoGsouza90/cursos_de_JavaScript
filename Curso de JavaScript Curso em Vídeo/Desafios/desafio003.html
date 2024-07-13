@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio antes e depois</title>
+    <style>
+        button{
+            width: 250px;
+            height: 80px;
+            font: normal 15pt arial;
+            border-radius: 50px;
+            border: 0.5px solid gray;
+        }
+        button:hover{
+            background-color: rgb(128, 128, 128, 0.3);
+            border-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <h1>Antes e depois</h1>
+    <button>Antecessor e Sucessor</button>
+    <script>
+        window.document.getElementsByTagName('button')[0].addEventListener('click', function clicar(){
+            var num1 = Number.parseInt(window.prompt(`Digite um número inteiro qualquer: `))
+            while (Number.isNaN(num1) || !Number.isInteger(num1)){
+                var num1 = Number.parseInt(window.prompt(`Por favor digite um número inteiro: `))
+            }
+            window.confirm(`Antes de ${num1}, temos o número ${--num1}.\nDepois de ${++num1}, temos o número ${++num1}.`
+        )
+        })
+            
+    </script>
+</body>
+</html>
