@@ -7,12 +7,13 @@ if(true){
 
 console.log(nome)
 /*console.log(nome1)  Não irá funcionar pois a variável "nome1" vem de let 
-                    
-    está fora dentro de outro bloco. */
+             
+    e está fora dentro de outro bloco. */
 
 function teste(){
     let nome2 = "Bruno"
     var nome3 = "Eduardo"
+    global.nome4 = 'Lucas'
     if(true){
         console.log(`Dentro de teste: ${nome2} !`)
     }
@@ -20,6 +21,8 @@ function teste(){
 }
 
 teste()
+
+console.log(nome4)
 
 /* console.log(nome3)   Erro pois a variável "nome3" está dentro de uma
                             
