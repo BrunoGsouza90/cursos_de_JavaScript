@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+form{
+    margin: auto;
+    border-radius: 20px;
+    border: 2px solid black;
+    padding: 10px;
+    height: auto;
+    margin-bottom: 3%;
+    width: 200px;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(139, 139, 1, 0.568);
+    background-image: radial-gradient(rgba(0, 128, 0, 0.425),rgba(255, 255, 0, 0.418));
+}
+
+div{
+    font-family: cursive;
+    font-size: 20pt;
+}
+
+button{
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 100%;
+    font-size: 15pt;
+}
