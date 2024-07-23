@@ -35,11 +35,3 @@ console.log(curso)
 /* const curso = "Curso de JavaScript"      Erro pois não é possível alterar
                                                 
     o valor de uma constante. */
-
-
-var n = () => {
-    var nome = 'Bruno'
-    return(nome)
-}
-
-console.log(nome)
