@@ -1,11 +1,12 @@
-var cursos = ['HTML', 'CSS', 'JavaScript', 'PHP', 'React']
+function somar_Dois(num){
+    return num + 2
+}
 
-cursos.map((elemento, posicao) => {
-    console.log(`Curso ${elemento} - Posição do curso ${posicao}!`)
-})
+lista = [1,2,3,4,5,6].map(somar_Dois)
+console.log(lista)
 
-var curso = cursos.map((elemento, posicao) => {
-    return `<div>${elemento}</div>`
-})
+var multiplicar_Dois = (num) => {
+    return num * 2
+}
 
-console.log(curso)
+console.log([2,4,6,8,10].map(multiplicar_Dois))
