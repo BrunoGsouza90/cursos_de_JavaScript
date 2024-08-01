@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de Repetição (Parte 1)</title>
+</head>
+<body>
+    <h1>Você está satisfeito?</h1>
+    <h2>Nesse bloco iremos comer uma pizza!</h2>
+    <img style="width: 200px; height: 200px; border-radius: 50%;" src="https://images7.alphacoders.com/596/596343.jpg" alt="Pizza">
+    <p style="font-family: cursive; font-size: 30px; font-weight: bold; color: rgba(255, 0, 0, 0.664);">Estou com fome!</p>
+    <script>
+        var texto = window.document.getElementsByTagName('p')[0]
+        var pedacos = 0
+
+        /* Aqui estamos usando uma Estrutura de Repetição "while". */
+        do{
+            var resposta = window.prompt('Você está com fome? [S/N]')
+            var resposta = resposta[0].toUpperCase()
+
+            /* Aqui estamos usando uma Estrutura de Repetição
+                    "do while". */
+            while(resposta != 'S' && resposta != 'N'){
+                window.alert('Opção Inválida!')
+                var resposta = window.prompt('Você está com fome? [S/N]')
+                var resposta = resposta[0].toUpperCase()
+            }
+            if(resposta == 'S'){
+                window.confirm(`Você comeu ${pedacos}!\n
+                Clique em "OK" para comer mais um pedaço!`)
+                var pedacos = pedacos + 1
+            }
+        }while(resposta !== 'N')
+        texto.innerHTML = `Você comeu ${pedacos} pedaço de pizza!`
+
+    </script>
+</body>
+</html>
