@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repetições (Parte 2)</title>
+</head>
+<body>
+    <h1>Repetições (Parte 2)</h1>
+    <h2>Esportes:</h2>
+    <ol type="A">
+        <li>Basquete</li>
+        <li>Futebol</li>
+        <li>Skateboard</li>
+        <li>Tênis</li>
+    </ol>
+    <script>
+        var lista = window.document.getElementsByTagName('ol')[0]
+        var itens = lista.getElementsByTagName('li')
+        for(var contador = 0; contador < itens.length; contador++) {
+            document.write(`${contador + 1}º - ${itens[contador].innerHTML} </br>`)
+        }
+        document.write(`</br>`)
+
+        var contador = 1
+        for(var item of itens) {
+            document.write(`${contador}º - ${item.innerHTML} </br>`)
+            contador++
+        }
+    </script>
+</body>
+</html>
