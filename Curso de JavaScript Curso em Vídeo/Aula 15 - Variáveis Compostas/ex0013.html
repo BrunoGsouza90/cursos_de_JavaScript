@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis Compostas</title>
+</head>
+<body>
+    <h1>Variáveis Compostas</h1>
+    <script>
+        /* Aqui criamos um Array. */
+        var carros = ['Camaro', 'Honda Civic', 'Onix', 'Duster',
+            'Fusca', 'Fusion']
+        
+        /* Aqui estamos imprimindo todos os valores do nosso
+                Array "carros". */
+        for(i = 0; i < carros.length; i++){
+            window.document.write(`<br>${i + 1}º Carro - ${carros[i]}.</br>`)
+        }
+
+        /* Aqui estamos criando um Objeto. */
+        pessoas = []
+        dicionario = {}
+        contador = 1
+        while(true){
+            resposta = window.confirm('Vamos listar pessoas?')
+            if(resposta == true){
+                while(resposta == true){
+                    nome = window.prompt(`Digite o ${contador}º Nome: `)
+                    idade = window.prompt(`Digite a ${contador}º Idade: `)
+                    dicionario = {'Nome': nome, 'Idade': idade}
+                    pessoas.push(dicionario)
+                    contador++
+                    resposta = window.confirm(`Quer adicionar mais uma pessoas?`)
+                    if(resposta == false){
+                        break
+                    }
+                }
+                break
+            } else {
+                window.alert('Não vamos acrescentar!')
+                break
+            }
+        }
+
+        /* Aqui estamos iterando sobre o nosso Objeto "pessoas". */
+        for(c in pessoas){
+            window.document.write(`<br><strong>${Number(c) + 1}º pessoa.</strong></br>`)
+            for(var [chave, valor] of Object.entries(pessoas[c])){
+                window.document.write(`${chave} = ${valor}.</br>`)
+            }
+        }
+    </script>
+</body>
+</html>
