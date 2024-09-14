@@ -1,35 +1,59 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pr-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Filter (Parte 1)</title>
+    <title>Meus cursos</title>
 </head>
 <body>
-    <h1>Filter (Parte 1)</h1>
+    <header>
+        <h1> Meus cursos</h1>
+    </header>
     <main>
-        <div id="caixa1" class="caixa">
-            <div id="c1" class="curso_c1 curso">
-                <p>HTML</p>
+        <div id="principal">
+            <div class="adicionar">
+                <h1>Menu Principal</h2>
+                
+                <div class="menu">
+                    <form id="form_adicionar">
+                        <input type="radio" name="menu" id="opcao1" value="1">
+                        <label for="adicionar">Adicionar Curso</label>
+                        <input placeholder="Digite o nome do curso" id="texto1" class="texto" type="text">
+                        <button type="submit" id="botao1">Enviar</button>
+                    </form>
+                </div>
+                <div class="menu">
+                    <form id="form_remover">
+                        <input type="radio" name="menu" id="opcao2" value="2">
+                        <label for="remover">Remover Curso</label>
+                        <input placeholder="Digite o nome do curso" id="texto2" class="texto" type="text">
+                        <button type="submit" id="botao2">Enviar</button>
+                    </form>
+                </div>
+                <div class="menu">
+                    <form id="form_renomear">
+                        <input type="radio" name="menu" id="opcao3" value="3">
+                        <label for="renomear">Renomear Curso</label>
+                        <input placeholder="Digite o nome do curso" id="texto3" class="texto" type="text">
+                        <input placeholder="Digite o novo nome do curso" id="texto4" class="texto" type="text">
+                        <button type="submit" id="botao3">Enviar</button>
+                    </form>
+                </div>
+                <p id="mensagem">mensagem</p>
             </div>
-            <div id="c2" class="curso_c1 curso">
-                <p>CSS</p>
-            </div>
-            <div id="c3" class="curso_c1 curso">
-                <p>JavaScript</p>
-            </div>
-            <div class="curso_c1 curso">
-                <p>PHP</p>
-            </div>
-            <div id="c5" class="curso_c1 curso">
-                <p>React</p>
-            </div>
-            <div id="c6" class="curso_c1 curso">
-                <p>MySQL</p>
+
+            <div class="cursos">
+                <h1>Lista dos Cursos</h1>
+                <h2 id="sem_cursos">Os cursos serão apresentados aqui!</h2>
             </div>
         </div>
     </main>
-    <script src="ex0042.js"></script>
+    <footer>
+        <p>Site desenvolvido por &copy;HP Softwares</p>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/+5535991754424" target="_blank">(35) 991754424.</a></p>
+        <p><strong>GitHub do Desenvolvedor: </strong><a target="_blank" href="https://github.com/BrunoGsouza90">Bruno Gonçalves.</a></p>
+    </footer>
+    <script src="extra001.js"></script>
 </body>
 </html>

@@ -1,75 +1,181 @@
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@charset "utf8";
+
+html, body{
+    margin: 0;
+    padding: 0;
 }
 
-button{
-    width: 150px;
-    height: 40px;
-    background-color: #025;
-    color: #fff;
-    border-radius: 10px;
-    cursor: pointer;
-    margin: 10px;
+header{
+    /* position: sticky;
+    top: 0;
+    z-index: 1000; */
+    margin-top: -21px;
+    padding: 20px;
+    background-color: rgb(228, 108, 108);
+    border-radius: 0px 0px 10px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.267);
 }
 
-.curso{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+header h1{
     text-align: center;
-    width: 200px;
-    border: 4px solid #888;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 5px;
-    cursor: pointer;
-    font-size: 30px;
+    font-family: cursive;
+    font-size: 4em;
 }
 
-.selecionado{
-    background-color: #800 !important;
-    color: #dcc !important;
-    border-color: #f00 !important;
+main{
+    margin: 30px auto;
+    margin-top: 50px;
+    min-width: 250px;
+    max-width: 900px;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.445);
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.096);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.322);
 }
 
-.curso_c1{
-    background-color: #ccc;
-    color: #444;
-}
-
-.curso_c2{
-    background-color: #444;
-    color: #ccc;
-}
-
-.caixa{
-    border: 4px solid #000;
-    background-color: #eee;
+main div#principal{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    flex-wrap: nowrap;
     align-items: center;
-    margin: 5px;
+    justify-content: space-around;
     padding: 30px;
-    width: 300px;
+    padding-bottom: 70px;
 }
 
-div.deletar{
-    display: block;
-    margin: auto;
-    width: 70px;
-    border: 1px solid black;
+main div#principal p#mensagem{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    display: none;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.384);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+}
+
+main div.adicionar{
+    margin-top: 40px;
+    background-color: rgba(0, 0, 255, 0.274);
+    border: 1px solid rgba(0, 0, 0, 0.116);
     border-radius: 5px;
-    padding: 5px;
-    background-color: rgba(255, 0, 0, 0.356);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.226);
+    width: 350px;
+    padding: 20px;
+    text-align: center;
+}
+
+main div.cursos{
+    margin-top: 40px;
+    background-color: rgba(0, 0, 255, 0.274);
+    border: 1px solid rgba(0, 0, 0, 0.116);
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.226);
+    width: 350px;
+    padding: 20px;
+    text-align: center;
+}
+
+main div.menu{
+    padding: 10px;
+}
+
+main div.menu label{
     font-size: 20px;
 }
 
-div.deletar:hover{
-    width: 80px;
-    height: 30px;
-    font-size: 25px;
-    padding: 8px;
+main div.menu input.texto{
+    margin: auto;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 0px;
+    height: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.692);
+    display: none;
+}
+
+main div.menu button{
+    margin: auto;
+    margin-top: 10px;
+    width: 0px;
+    height: 0px;
+    font-size: 18px;
+    background-color: rgba(4, 255, 4, 0.486);
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.349);
+    font-family: cursive;
+    cursor: pointer;
+    display: none;
+}
+
+main div.menu button:hover{
+    width: 130px;
+    height: 60px;
+    font-size: 20px;
+    background-color: rgba(2, 148, 2, 0.541);
+    border: 2px solid rgba(0, 0, 0, 0.349);
+}
+
+div.cursos div{
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.247);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.329);
+    font-family: cursive;
+    font-size: 20px;
+    background-color: gray;
+}
+
+div.cursos div button{
+    font-size: 18px;
+    width: 90px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.384);
+    background-color: rgba(255, 0, 0, 0.534);
+    cursor: pointer;
+}
+
+div.cursos div button:hover{
+    width: 110px;
+    padding: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.384);
+    background-color: rgba(238, 130, 238, 0.411);
+}
+
+div.cursos h2{
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.397);
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.377);
+    background-color: rgba(127, 255, 212, 0.493);
+    font-weight: normal;
+    font-size: 20px;
+    color: rgb(49, 49, 49);
+    font-family: cursive;
+}
+
+footer{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(228, 108, 108);
+    padding: 30px;
+    padding-left: 80px;
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+footer p{
+    padding: 5px;
 }

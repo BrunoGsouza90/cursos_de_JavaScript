@@ -1,6 +1,6 @@
 @charset "utf8";
 
-html, body{
+*{
     margin: 0;
     padding: 0;
 }
@@ -162,7 +162,7 @@ footer{
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(228, 108, 108);
-    padding: 30px;
+    padding: 60px;
     padding-left: 80px;
 }
 

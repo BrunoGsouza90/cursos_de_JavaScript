@@ -1,0 +1,68 @@
+@charset "utf8";
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    height: 100vh;
+    padding: 30px;
+}
+
+main div#principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px;
+    background-color: rgba(128, 128, 128, 0.445);
+    border: 1px solid rgba(0, 0, 0, 0.342);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.301);
+    border-radius: 5px;
+}
+
+main div#principal div#opcoes{
+    margin: 30px auto;
+    padding: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.438);
+    border-radius: 5px;
+    background-color: lightskyblue;
+}
+
+main div#principal div#cursos{
+    margin: 30px auto;
+    padding: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.397);
+    border-radius: 5px;
+    background-color: lightcoral;
+}
+
+main div#principal div#cursos div.lista_cursos{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 30px;
+    background-color: rgb(128, 128, 128);
+    border: 1px solid rgba(0, 0, 0, 0.438);
+    border-radius: 5px;
+}
+
+button{
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.637);
+    background-color: rgba(0, 128, 0, 0.685);
+    cursor: pointer;
+}
+
+button:hover{
+    width: 160px;
+    height: 60px;
+    background-color: rgba(0, 128, 0, 0.295);
+    font-size: 15px;
+}
+
+input{
+    margin-left: 80px;
+}
