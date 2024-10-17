@@ -6,9 +6,7 @@ if(true){
 }
 
 console.log(nome)
-/*console.log(nome1)  Não irá funcionar pois a variável "nome1" vem de let 
-             
-    e está fora dentro de outro bloco. */
+/*console.log(nome1)  Não irá funcionar pois a variável "nome1" vem de let e está fora dentro de outro bloco. */
 
 function teste(){
     let nome2 = "Bruno"
@@ -22,16 +20,13 @@ function teste(){
 
 teste()
 
-console.log(nome4)
+console.log(nome3)
 
-/* console.log(nome3)   Erro pois a variável "nome3" está dentro de uma
-                            
-    função. */
+/* console.log(nome3)   Erro pois a variável "nome3" está dentro de uma função. */
 
 const curso = "CFB Cursos"
+const curso = "JavaScript"
 
 console.log(curso)
 
-/* const curso = "Curso de JavaScript"      Erro pois não é possível alterar
-                                                
-    o valor de uma constante. */
+/* const curso = "Curso de JavaScript"      Erro pois não é possível alterar o valor de uma constante. */

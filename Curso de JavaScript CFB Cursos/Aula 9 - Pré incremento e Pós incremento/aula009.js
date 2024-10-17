@@ -33,3 +33,4 @@ console.log(n1 + n2)
 
 console.log(String(n1) + String(n2))
 console.log(`${n1}${n2}`)
+console.log(`${n1 + n2}`)
