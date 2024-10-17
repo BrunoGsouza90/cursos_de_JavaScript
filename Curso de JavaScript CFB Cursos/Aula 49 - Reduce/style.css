@@ -1,0 +1,59 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 1.1em;
+}
+
+body h1{
+    margin: 20px;
+    font-size: 2.5em;
+}
+
+.caixa{
+    border: 5px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 5px 5px 5px;
+    padding: 30px;
+}
+
+.verde{
+    border-color: green !important;
+    background-color: rgba(0, 128, 0, 0.37) !important;
+}
+
+.azul{
+    border-color: blue !important;
+    background-color: rgba(0, 0, 255, 0.336) !important;
+}
+
+.vermelho{
+    border-color: red !important;
+    background-color: rgba(255, 0, 0, 0.233) !important;
+}
+
+button{
+    margin: 30px 30px 30px 30px;
+    padding: 10px;
+    width: 200px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.486);
+}
+
+input{
+    margin: 15px 0px 0px 0px;
+    border: 1px solid black;
+}
+
+#caixa_pesquisar input{
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+}
