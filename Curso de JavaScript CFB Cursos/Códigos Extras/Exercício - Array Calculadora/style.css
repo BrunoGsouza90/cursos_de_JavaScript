@@ -1,0 +1,121 @@
+@charset "utf8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+div#titulo{
+    background-color: rgba(255, 0, 0, 0.377);
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.377);
+}
+
+h1{
+    text-align: center;
+    padding: 20px;
+}
+
+body{
+    font-family: cursive;
+}
+
+div#principal{
+    margin: auto;
+    margin-top: 80px;
+    padding: 20px;
+    background-color: lightgray;
+    border: 1px solid rgba(0, 0, 0, 0.39);
+    border-radius: 5px;
+    box-shadow: 10px 3px 3px rgb(0, 0, 0);
+    min-width: 300px;
+    max-width: 300px;
+}
+
+p#valor{
+    text-align: right;
+    font-size: 1.5em;
+    border: 1px solid rgba(0, 0, 0, 0.281);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.336);
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.384);
+    padding: 20px;
+    margin: 20px 0px 20px 0px;
+}
+
+div#corpo{
+    display: flex;
+}
+
+button#botao_zerar{
+    margin: 0px;
+    padding: 10px 20px 10px 20px;
+}
+
+button#botao_negativo{
+    max-width: 55px;
+    font-size: 0.9em;
+    font-weight: bold;
+    min-height: 51px;
+}
+
+div#numeros{
+    display: flex;
+    margin: auto;
+    margin-top: 6px;
+}
+
+button.numero{
+    padding: 10px;
+    font-size: 1.5em;
+    margin: 20px 10px 20px 10px;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.699);
+    border-radius: 5px;
+    background-color: gray;
+}
+
+button.numero:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+div#botoes{
+    display: flex;
+    flex-direction: column;
+    min-width: 50px;
+    max-width: 50px;
+    margin-left: auto;
+    margin-top: 20px;
+}
+
+button.operadores{
+    margin: 5px 5px 3px 5px;
+    padding: 10px;
+    background-color: gray;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.336);
+    cursor: pointer;
+    font-size: 1.3em;
+}
+
+button.operadores:hover{
+    background-color: lightgray;
+}
+
+button#botao_apagar{
+    background-color: red;
+}
+
+button#botao_apagar:hover{
+    background-color: rgba(240, 128, 128, 0.404);
+}
+
+button#botao_total{
+    background-color: rgba(0, 0, 255, 0.678);
+}
+
+button#botao_total:hover{
+    background-color: rgba(173, 216, 230, 0.336);
+}
