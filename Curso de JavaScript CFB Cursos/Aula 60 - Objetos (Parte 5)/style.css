@@ -1,0 +1,72 @@
+@charset "utf8";
+
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+
+    font-family: cursive;
+    margin: 20px;
+
+}
+
+div#container{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+label, input{
+
+    display: block;
+    margin-top: 20px;
+
+}
+
+.caixa{
+
+    border: 1px solid black;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.404);
+    border-radius: 10px;
+    max-width: 300px;
+    padding: 20px;
+    margin-top: 10px;
+
+}
+
+button{
+
+    background-color: rgb(128, 220, 250);
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.425);
+    margin: 20px 10px 20px 10px;
+    border-radius: 5px;
+    font-size: 1.3em;
+    cursor: pointer;
+
+}
+
+button:hover{
+
+    background-color: rgba(173, 216, 230, 0.623);
+    font-size: 1.5em;
+    margin: 20px 10px 20px 5px;
+
+}
+
+div#div_resposta{
+
+    width: 100%;
+    margin: 10px 10px 10px 10px;
+    border-radius: 10px 0px 0px 10px;
+    overflow-y: scroll;
+    max-height: 100px;
+
+}
