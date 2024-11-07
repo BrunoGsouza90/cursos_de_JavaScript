@@ -1,0 +1,237 @@
+@charset "utf8";
+
+*, body{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+
+    background-image: radial-gradient(circle, rgba(255, 0, 0, 0.5), rgba(255, 255, 0, 0.418), rgba(0, 0, 255, 0.473));
+
+}
+
+h1#titulo{
+
+    font: italic bold 2.0em cursive;
+    padding: 20px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+
+}
+
+div#div_principal{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    background-color: lightgray;
+    border: 1px solid rgba(0, 0, 0, 0.466);
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.432);
+    padding: 50px;
+    max-width: 500px;
+
+}
+
+div#dados_carro{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+label{
+    
+    padding: 10px;
+
+}
+
+input{
+
+    padding: 5px;
+
+}
+
+label#label_ano{
+
+    margin-left: 5px;
+
+}
+
+input#input_ano{
+
+    margin-left: 7px;
+
+}
+
+label#label_portas{
+
+    margin-left: -10px;
+
+}
+
+input#input_portas{
+
+    margin-left: -8px;
+
+}
+
+div#dados_portas{
+
+    margin-top: 10px;
+
+}
+
+div#dados_ano{
+
+    margin-top: 10px;
+
+}
+
+button#adicionar_carro{
+
+    margin: 20px 0px 20px 100px;
+    padding: 10px;
+    max-width: 150px;
+    background-color: lightseagreen;
+    font-family: cursive;
+    color: white;
+    font-size: 1.0em;
+    border: 1px solid rgba(0, 0, 0, 0.493);
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.479);
+    cursor: pointer;
+
+}
+
+button#adicionar_carro:hover{
+
+    background-color: rgba(32, 178, 171, 0.589);
+    font-size: 1.1em;
+
+}
+
+input#input_ligar{
+    
+    transform: scale(1.4);
+
+}
+
+div#dados_ligar{
+
+    margin-bottom: 20px;
+
+}
+
+label#label_ligar{
+
+    font-size: 1.2em;
+
+}
+
+div#dados_municao{
+
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-left: -12px;
+
+}
+
+label#label_municao{
+
+    margin-left: 5px;
+
+}
+
+div#div_municao{
+    
+    min-width: 200px;
+    max-width: 200px;
+    margin-left: 8px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.521);
+    border-radius: 5px;
+    background-color: white;
+
+}
+
+button.militar{
+
+    min-width: 30px;
+    max-width: 30px;
+    margin-left: 5px;
+    background-color: lightseagreen;
+    font-family: cursive;
+    color: white;
+    font-size: 1.0em;
+    border: 1px solid rgba(0, 0, 0, 0.493);
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.479);
+    cursor: pointer;
+
+}
+
+button.militar:hover{
+
+    background-color: rgba(32, 178, 171, 0.589);
+
+}
+
+div#dados_blindagem{
+
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-left: -12px;
+
+}
+
+div#div_blindagem{
+    
+    min-width: 200px;
+    max-width: 200px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.521);
+    border-radius: 5px;
+    background-color: white;
+
+}
+
+div#resultado{
+
+    text-align: center;
+    max-width: 300px;
+    min-width: 300px;
+    background-color: lightgray;
+    border: 1px solid rgba(0, 0, 0, 0.466);
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.562);
+    margin: 10px auto;
+    padding: 50px;
+    overflow-y: scroll;
+    max-height: 200px;
+
+}
+
+div#tipo_carro{
+
+    margin: 20px;
+
+}
+
+div#dados_ligar{
+
+    margin-right: 235px;
+
+}
+
+div#dados_militar{
+
+    display: none;
+
+}

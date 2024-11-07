@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercícios de Classes</title>
+</head>
+<body>
+    <h1 id="titulo">Exercícios de Classes</h1>
+
+    <div id="div_principal">
+        <form>
+            <div id="dados_carro">
+                <div id="dados_nome">
+                    <label id="label_nome" for="nome">Nome do carro</label>
+                    <input id="input_nome" placeholder="Digite o nome do carro..." type="text"></input>
+                </div>
+                <div id="dados_ano">
+                    <label id="label_ano" for="ano">Ano do carro</label>
+                    <input id="input_ano" placeholder="Digite o ano do carro..." type="text"></input>
+                </div>
+                <div id="dados_portas">
+                    <label id="label_portas" for="ano">Número de portas</label>
+                    <input id="input_portas" placeholder="Digite o número de portas..." type="text"></input>
+                </div>
+                <div id="tipo_carro">
+                    <input id="input_normal" name="tipo_carro" type="radio" checked></input>
+                    <label id="label_normal" for="carro_militar">Normal</label>
+                    <input id="input_militar" name="tipo_carro" type="radio"></input>
+                    <label id="label_militar" for="carro_militar">Militar</label>
+                </div>
+            </div>
+            <div>
+                <div id="dados_ligar">
+                    <input id="input_ligar" type="checkbox"></input>
+                    <label id="label_ligar" for="ligar">Ligar o carro</label>
+                </div>
+                <div id="dados_militar">
+                    <div id="dados_municao">
+                        <label id="label_municao" for="municao">Munição</label>
+                        <div id="div_municao">0</div>
+                        <button id="adicionar_municao" class="militar">+</button>
+                        <button id="subtrair_municao" class="militar">-</button>
+                    </div>
+                    <div id="dados_blindagem">
+                        <label id="label_blindagem" for="blindagem">Blindagem</label>
+                        <div id="div_blindagem">0</div>
+                        <button id="adicionar_blindagem" class="militar">+</button>
+                        <button id="subtrair_blindagem" class="militar">-</button>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" id="adicionar_carro">Adicionar carro</button>
+        </form>
+    </div>
+    <div id="resultado">
+        
+    </div>
+
+    <script src="ex0062.js"></script>
+
+</body>
+</html>
