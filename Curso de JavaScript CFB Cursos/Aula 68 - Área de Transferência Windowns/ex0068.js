@@ -5,6 +5,8 @@ const iinput = document.getElementById('iinput')
 const copiar_input = document.getElementById('copiar_input')
 
 copiar_texto.addEventListener('click', ()=>{
+    iinput.select()
+    iinput.setSelectionRange(0,99999)
     navigator.clipboard.writeText(texto.innerHTML)
 })
 
