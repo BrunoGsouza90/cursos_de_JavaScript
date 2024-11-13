@@ -3,18 +3,21 @@ const txt_pequisar = window.document.querySelector('#txt_pesquisar')
 const btnVerificar = window.document.querySelector('#btnVerificar')
 const resultado = window.document.querySelector('#resultado')
 
-const elementos_array = [9,1,10,17,15,13,11,9]
+const elementos_array = [21,25,16,20,18,18,22]
 p_array.innerHTML = `[${elementos_array}]`
 
 btnVerificar.addEventListener('click', ()=>{
     const ret = elementos_array.some((elemento, posicao)=>{
         if(elemento < 18){
             resultado.innerHTML = `Array não conforme na posição ${posicao}.`
+            return true
+        } else {
+            return false
         }
-        return elemento >= 18
+        
     })
 
-    if(ret == true){
+    if(ret == false){
         resultado.innerHTML = 'Array em conformidade.'
     }
 })

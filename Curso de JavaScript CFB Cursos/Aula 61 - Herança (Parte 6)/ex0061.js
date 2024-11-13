@@ -5,9 +5,9 @@ paragrafo.setAttribute('style', 'text-align:center;')
 let carro = 0
 
 class Carros{
-    constructor(pnome, portas, pcor, pvelocidade){
+    constructor(pnome, pportas, pcor, pvelocidade){
         this.nome = pnome
-        this.portas = portas
+        this.portas = pportas
         this.ligado = 'Não'
         this.velocidade = pvelocidade
         this.cor = pcor

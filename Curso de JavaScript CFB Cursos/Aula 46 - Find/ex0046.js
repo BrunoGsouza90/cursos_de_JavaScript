@@ -9,7 +9,7 @@ p_array.innerHTML = `[${elementos_array}]`
 btnPesquisar.addEventListener('click', ()=>{
     let texto = false
     elementos_array.find((elemento, posicao)=>{
-        if(e == txt_pesquisar.value){
+        if(elemento == txt_pesquisar.value){
             resultado.innerHTML = `<br>O valor pesquisado foi: <strong>${elemento}</strong>.<br>Está na posição: <strong>${posicao}º</strong>.`
             texto = true
         }
