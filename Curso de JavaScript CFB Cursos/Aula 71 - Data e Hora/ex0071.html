@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data e Hora</title>
+    <style>
+
+        #relogio{
+
+            display: inline-block;
+            padding: 20px;
+            border: 1px solid rgba(0, 0, 0, 0.342);
+            border-radius: 5px;
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.349);
+            box-sizing: border-box;
+            background-color: rgb(78, 78, 78);
+            color: rgb(2, 168, 2);
+            font: italic 1.5em monospace;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Data e Hora</h1>
+
+    <p id="paragrafo"></p>
+    <p id="relogio"></p>
+    <button id="ativar">Ativar alarme</button>
+    <button id="desativar">Desativar alarme</button>
+
+    <audio id="audio_alarme">
+        <source src="Alarme.MP3" type="audio/mp3"></source>
+    </audio>
+
+    <p id="hora_alarme"></p>
+
+    <script src="ex0071.js"></script>
+
+</body>
+</html>

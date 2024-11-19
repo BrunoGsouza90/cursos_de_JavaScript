@@ -1,0 +1,48 @@
+@charset "utf8";
+
+*{
+
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    box-sizing: border-box;
+
+}
+
+h1{
+
+    margin: 10px;
+
+}
+
+div.olhos{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 400px;
+    height: 200px;
+    margin: 50px auto;
+
+}
+
+.olho{
+
+    width: 200px;
+    height: 200px;
+    transform-origin: center center;
+
+}
+
+div#posicoes{
+
+    margin: 20px;
+
+}
+
+div#posicoes > p{
+
+    padding: 10px;
+
+}
