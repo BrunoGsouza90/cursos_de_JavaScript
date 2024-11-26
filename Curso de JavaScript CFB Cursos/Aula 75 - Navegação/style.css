@@ -1,0 +1,41 @@
+@charset "utf8";
+
+*{
+
+    border: none;
+    padding: 0px;
+    margin: 10px;
+    box-sizing: border-box;
+
+}
+
+form{
+
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+
+}
+
+input, button{
+
+    margin-bottom: 10px;
+
+}
+
+input[type=url]{
+
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+button{
+
+    background-color: lightgray;
+    padding: 5px 30px;
+    cursor: pointer;
+    border-radius: 10px;
+
+}

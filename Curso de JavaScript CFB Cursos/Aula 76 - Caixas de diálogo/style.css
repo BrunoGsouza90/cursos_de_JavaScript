@@ -1,0 +1,25 @@
+@charset "utf8";
+
+*{
+
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+button{
+
+    background-color: #eee;
+    padding: 10px 50px;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+button:hover{
+
+    outline: 3px solid red;
+
+}
