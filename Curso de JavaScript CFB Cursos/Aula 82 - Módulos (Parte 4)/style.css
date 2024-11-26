@@ -1,0 +1,20 @@
+@charset "utf8";
+
+button{
+
+    margin-top: 10px;
+    border: none;
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 0.9em;
+    cursor: pointer;
+
+}
+
+button:hover{
+
+    background-color: rgb(195, 235, 248);
+    outline: 2px solid blue;
+
+}
