@@ -1,0 +1,16 @@
+@charset "utf8";
+
+*{
+
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+
+}
+
+h1{
+
+    margin: 15px;
+
+}
