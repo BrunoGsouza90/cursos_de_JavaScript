@@ -1,0 +1,51 @@
+@charset "utf8";
+
+*{
+
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+.painel{
+
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #eee;
+
+}
+
+button{
+
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    background-color: #ccc;
+
+}
+
+button:hover{
+
+    background-color: rgba(0, 0, 0, 0.753);
+    color: white;
+    transition: background-color 0.8s;
+
+}
+
+.carro{
+
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.267);
+    border: 1px solid rgba(0, 0, 0, 0.384);
+    background-color: red;
+    border-radius: 50%;
+    height: 100px;
+    margin: 10px;
+
+}
