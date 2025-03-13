@@ -34,7 +34,7 @@ paragrafo.innerHTML += `<br><strong>Comparação de Objetos Strings:</strong> ${
 
 paragrafo.innerHTML += `<strong>Substituindo conteúdo da String:</strong> ${nome.replace('Bruno', 'Bruno Gonçalves de Souza')}.<br>`
 
-paragrafo.innerHTML += `<strong>Posição da Letra "B" com Expressão Regular:</strong> ${nome.search('o')}.<br>`
+paragrafo.innerHTML += `<strong>Posição da Letra "B" com Expressão Regular:</strong> ${nome.search('B')}.<br>`
 
 nome = 'Bruno Gonçalves de Souza'
 

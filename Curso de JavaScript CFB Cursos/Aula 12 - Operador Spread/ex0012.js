@@ -1,5 +1,7 @@
 let n1 = [10,20,30]
 let n2 = [11,22,33,44,55]
+let n3_type = typeof([n1])
+let n4_type = typeof([...n1])
 let n3 = [n1]
 let n4 = [...n1]
 let n5 = [n1, n2]
@@ -17,6 +19,8 @@ let valores = [1,5,4]
 
 console.log(`n1 = ${n1}`)
 console.log(`n2 = ${n2}`)
+console.log(`n3_type = ${n3_type}`)
+console.log(`n4_type = ${n4_type}`)
 console.log(`n3 = ${n3}`)
 console.log(`n4 = ${n4}`)
 console.log(`n5 = ${n5}`)
